@@ -88,6 +88,7 @@ Traditional vesting systems face several challenges:
 
 **Token Vesting Contract Address:**
 https://lab.stellar.org/smart-contracts/contract-explorer?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;&smartContracts$explorer$contractId=CARYWO4GSPJJSC6DJQHR6JYHPTZSJTCOKV63ZDKHH4ENNS7GMWFNUJBE;;
+
 Example:
 https://stellar.expert/explorer/testnet/tx/f3721f1f0274210527166482d07d3c88eb944917a5f71b299760b8762299bcee
 
@@ -255,6 +256,7 @@ soroban contract invoke \
 ## 👨‍💻 Author
 
 **Ranit Sarkar**
+
 Blockchain Enthusiast | Aspiring Developer
 
 ---
