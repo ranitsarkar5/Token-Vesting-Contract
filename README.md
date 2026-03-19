@@ -2,15 +2,15 @@
 
 ### Blockchain-Based Token Locking & Gradual Release on Stellar
 
----
+
 
 Token Vesting Contract enables secure, time-based token distribution using smart contracts on the Stellar Soroban network.
 
----
+
 
 **Live Contract • Architecture • Pipeline • Quick Start**
 
----
+
 
 ## 📖 What is this?
 
@@ -91,6 +91,7 @@ https://lab.stellar.org/smart-contracts/contract-explorer?$=network$id=testnet&l
 
 Example:
 https://stellar.expert/explorer/testnet/tx/f3721f1f0274210527166482d07d3c88eb944917a5f71b299760b8762299bcee
+
 
 <img width="1892" height="936" alt="Screenshot 2026-03-19 144415" src="https://github.com/user-attachments/assets/5bbb4b8a-961c-4da4-86ed-fda7fb8e60a1" />
 
