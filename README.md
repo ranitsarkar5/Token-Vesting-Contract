@@ -27,7 +27,7 @@ Provide vesting parameters like total amount, start time, and duration — and t
 * Ensures transparency via blockchain records
 * Prevents early withdrawal before vesting conditions are met
 
----
+
 
 ## 🔑 Why Soroban?
 
@@ -40,7 +40,8 @@ Traditional vesting systems face several challenges:
 * Manual or centralized tracking
 * Risk of manipulation or human error
 
----
+
+
 
 ### Why We Chose Soroban
 
@@ -52,7 +53,8 @@ Traditional vesting systems face several challenges:
 | Storage               | Expensive          | ✅ Optimized Instance Storage |
 | Ecosystem             | Fragmented         | ✅ Unified Stellar Network    |
 
----
+
+
 
 ## ⚙️ Soroban Features Used
 
@@ -61,7 +63,8 @@ Traditional vesting systems face several challenges:
 * **Symbol Keys** — Lightweight storage identifiers
 * **Env SDK** — Direct interaction with blockchain state
 
----
+
+
 
 ## 🏗️ Architecture
 
@@ -73,7 +76,8 @@ Traditional vesting systems face several challenges:
 * **Beneficiary** claims tokens over time
 * **Release Function** calculates and distributes vested tokens
 
----
+
+
 
 ## 🛠️ Tech Stack & Tools
 
@@ -82,7 +86,9 @@ Traditional vesting systems face several challenges:
 * **Stellar CLI** — Build, deploy, and interact
 * **Stellar Network** — Blockchain infrastructure
 
----
+
+
+
 
 ## 🔗 Deployed Smart Contract
 
@@ -95,7 +101,8 @@ https://stellar.expert/explorer/testnet/tx/f3721f1f0274210527166482d07d3c88eb944
 
 <img width="1892" height="936" alt="Screenshot 2026-03-19 144415" src="https://github.com/user-attachments/assets/5bbb4b8a-961c-4da4-86ed-fda7fb8e60a1" />
 
----
+
+
 
 ## 🎯 Vision & Use Cases
 
@@ -103,7 +110,8 @@ https://stellar.expert/explorer/testnet/tx/f3721f1f0274210527166482d07d3c88eb944
 
 To create a fair, automated, and transparent token distribution system that eliminates trust issues and ensures long-term sustainability.
 
----
+
+
 
 ### Key Use Cases
 
@@ -112,7 +120,8 @@ To create a fair, automated, and transparent token distribution system that elim
 * **DAO Treasury Management** — Controlled fund release
 * **Employee Incentives** — Performance-based rewards
 
----
+
+
 
 ## 🏗️ Pipeline (Development Plan)
 
@@ -137,7 +146,8 @@ To create a fair, automated, and transparent token distribution system that elim
 
 * Returns complete vesting details
 
----
+
+
 
 ### 2. Data Structure
 
@@ -151,7 +161,8 @@ VestingData {
 }
 ```
 
----
+
+
 
 ## 🔐 Access Control & Security
 
@@ -168,7 +179,8 @@ VestingData {
 * Role-Based Access Control (RBAC)
 * Multi-user support
 
----
+
+
 
 ## 🚧 Roadmap & Future Plans
 
@@ -178,7 +190,8 @@ VestingData {
 * Frontend dashboard (React + Soroban)
 * Admin controls
 
----
+
+
 
 ## 📁 Project Structure
 
@@ -191,7 +204,8 @@ VestingData {
         └── lib.rs
 ```
 
----
+
+
 
 ## ⚙️ Environment Setup & Installation
 
@@ -215,7 +229,8 @@ Add WASM target:
 rustup target add wasm32-unknown-unknown
 ```
 
----
+
+
 
 ### B) Build Contract
 
@@ -229,7 +244,8 @@ Optimize (optional but recommended):
 soroban contract optimize --wasm target/wasm32-unknown-unknown/release/contract.wasm
 ```
 
----
+
+
 
 ### C) Deployment & Invocation
 
@@ -252,7 +268,7 @@ soroban contract invoke \
   -- release --current_time <TIME>
 ```
 
----
+
 
 ## 👨‍💻 Author
 
@@ -260,7 +276,8 @@ soroban contract invoke \
 
 Blockchain Enthusiast | Aspiring Developer
 
----
+Profile link : https://github.com/ranitsarkar5
+
 
 ## 📄 License
 
