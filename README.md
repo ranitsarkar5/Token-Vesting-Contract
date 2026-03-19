@@ -62,6 +62,7 @@ https://stellar.expert/explorer/testnet/tx/f3721f1f0274210527166482d07d3c88eb944
 - Integrate with token contract for automatic transfers  
 - Add admin controls  
 
+<img width="1892" height="936" alt="image" src="https://github.com/user-attachments/assets/d08eda02-63a5-49e7-bc01-4d234766f204" />
 ---
 
 ## 👨‍💻 Author
