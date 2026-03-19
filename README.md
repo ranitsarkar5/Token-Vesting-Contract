@@ -65,8 +65,7 @@ https://stellar.expert/explorer/testnet/tx/f3721f1f0274210527166482d07d3c88eb944
 ---
 
 ## 👨‍💻 Author
-Your Name
-
+Ranit Sarkar
 ---
 
 ## 📄 License
