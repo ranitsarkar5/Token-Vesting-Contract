@@ -225,13 +225,14 @@ soroban contract invoke \
   -- release --current_time <TIME>
 
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Ranit Sarkar
 Blockchain Enthusiast | Aspiring Developer
 
-📄 License
+---
 
+## 📄 License
 MIT License
 
 
