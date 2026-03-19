@@ -223,16 +223,13 @@ soroban contract invoke \
   --source <SOURCE_ACCOUNT> \
   --network testnet \
   -- release --current_time <TIME>
-
-
-## 👨‍💻 Author
+👨‍💻 Author
 
 Ranit Sarkar
 Blockchain Enthusiast | Aspiring Developer
 
----
+📄 License
 
-## 📄 License
 MIT License
 
 
