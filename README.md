@@ -1,73 +1,235 @@
-# 🚀 Token Vesting Contract (Soroban - Stellar)
-
-## 📌 Project Description
-This project implements a Token Vesting Smart Contract using Soroban on the Stellar blockchain. It allows tokens to be released gradually over time to a beneficiary instead of all at once.
-
-This is useful for:
-- Team token allocations
-- Investor lockups
-- Reward distribution systems
+# 🚀 Token Vesting Contract  
+### Blockchain-Based Token Locking & Gradual Release on Stellar  
 
 ---
 
-## ⚙️ What it does
-The contract locks a fixed amount of tokens and releases them linearly over a specified duration.
-
-Key workflow:
-1. Contract is initialized with:
-   - Beneficiary address
-   - Total token amount
-   - Vesting start time
-   - Vesting duration
-2. Tokens become available gradually over time.
-3. Beneficiary can claim (release) vested tokens anytime.
+Token Vesting Contract enables secure, time-based token distribution using smart contracts on the Stellar Soroban network.
 
 ---
 
-## ✨ Features
-- 🔐 Secure token locking mechanism  
-- ⏳ Time-based linear vesting  
-- 📈 Real-time vested amount calculation  
-- 💸 Partial token release support  
-- 🔍 Public state query function  
-- ⚡ Lightweight and efficient Soroban contract  
+**Live Contract • Architecture • Pipeline • Quick Start**
 
 ---
 
-## 🧠 How Vesting Works
-- Before start time → No tokens released  
-- During vesting → Tokens released proportionally  
-- After duration → Full amount available  
+## 📖 What is this?
+
+Token Vesting Contract is a decentralized financial infrastructure designed for managing token distribution in a transparent and trustless way. It allows organizations, startups, and DAOs to lock tokens and release them gradually over time without relying on intermediaries.
+
+Instead of transferring tokens all at once, this smart contract enforces a predefined vesting schedule.
+
+Provide vesting parameters like total amount, start time, and duration — and the contract automatically:
+
+- Locks tokens securely inside the contract  
+- Tracks vesting progress over time  
+- Calculates the vested amount dynamically  
+- Allows beneficiaries to claim tokens gradually  
+- Ensures transparency via blockchain records  
+- Prevents early withdrawal before vesting conditions are met  
 
 ---
 
-## 🛠 Tech Stack
-- Rust (Soroban SDK)
-- Stellar Blockchain (Soroban Smart Contracts)
+## 🔑 Why Soroban?
+
+### The Problem
+
+Traditional vesting systems face several challenges:
+
+- High transaction fees  
+- Slow execution speeds  
+- Manual or centralized tracking  
+- Risk of manipulation or human error  
 
 ---
 
-## 🔗 Deployed Smart Contract Link
-Token Vesting Contract:  
-https://lab.stellar.org/smart-contracts/contract-explorer?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;&smartContracts$explorer$contractId=CARYWO4GSPJJSC6DJQHR6JYHPTZSJTCOKV63ZDKHH4ENNS7GMWFNUJBE;;
+### Why We Chose Soroban
 
-Example:
+| Feature | Traditional Chains | With Soroban |
+|--------|------------------|-------------|
+| Transaction Fees | High/Unpredictable | ✅ Near-Zero & Predictable |
+| Execution Speed | Slow | ✅ Fast & Efficient |
+| Smart Contract Safety | Varies | ✅ Rust-based Type Safety |
+| Storage | Expensive | ✅ Optimized Instance Storage |
+| Ecosystem | Fragmented | ✅ Unified Stellar Network |
+
+---
+
+## ⚙️ Soroban Features Used
+
+- **Instance Storage (`instance()`)** — Efficient storage of vesting data  
+- **Rust Type Safety** — Reduces contract vulnerabilities  
+- **Symbol Keys** — Lightweight storage identifiers  
+- **Env SDK** — Direct interaction with blockchain state  
+
+---
+
+## 🏗️ Architecture
+
+### High-Level Flow
+
+- **Creator** initializes the contract with vesting parameters  
+- **Smart Contract** locks and manages tokens  
+- **Stellar Blockchain** stores immutable vesting data  
+- **Beneficiary** claims tokens over time  
+- **Release Function** calculates and distributes vested tokens  
+
+---
+
+## 🛠️ Tech Stack & Tools
+
+- **Rust** — Smart contract development  
+- **Soroban SDK** — Contract framework  
+- **Stellar CLI** — Build, deploy, and interact  
+- **Stellar Network** — Blockchain infrastructure  
+
+---
+
+## 🔗 Deployed Smart Contract
+
+**Token Vesting Contract Address:**  
+https://lab.stellar.org/smart-contracts/contract-explorer?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;&smartContracts$explorer$contractId=CARYWO4GSPJJSC6DJQHR6JYHPTZSJTCOKV63ZDKHH4ENNS7GMWFNUJBE;; 
+
+Example:  
 https://stellar.expert/explorer/testnet/tx/f3721f1f0274210527166482d07d3c88eb944917a5f71b299760b8762299bcee
 
+<img width="1892" height="936" alt="Screenshot 2026-03-19 144415" src="https://github.com/user-attachments/assets/28086c46-a865-42bf-b901-b12e4313f5bc" />
+
+
 ---
 
-## 📦 Future Improvements
-- Add cliff period support  
-- Add multiple beneficiaries  
-- Integrate with token contract for automatic transfers  
-- Add admin controls  
+## 🎯 Vision & Use Cases
 
-<img width="1892" height="936" alt="image" src="https://github.com/user-attachments/assets/d08eda02-63a5-49e7-bc01-4d234766f204" />
+### Vision
+
+To create a fair, automated, and transparent token distribution system that eliminates trust issues and ensures long-term sustainability.
+
 ---
 
-## 👨‍💻 Author
+### Key Use Cases
+
+- **Startup Token Distribution** — Vesting for founders and teams  
+- **Investor Lockups** — Prevent early token dumping  
+- **DAO Treasury Management** — Controlled fund release  
+- **Employee Incentives** — Performance-based rewards  
+
+---
+
+## 🏗️ Pipeline (Development Plan)
+
+### 1. Smart Contract Functions
+
+**init(...)**
+- Initializes vesting parameters  
+- Stores beneficiary, total amount, start time, and duration  
+
+**vested_amount(...)**
+- Calculates unlocked tokens  
+- Based on elapsed time  
+
+**release(...)**
+- Allows claiming of vested tokens  
+- Updates released amount  
+
+**get_data(...)**
+- Returns complete vesting details  
+
+---
+
+### 2. Data Structure
+
+
+VestingData {
+beneficiary: Address,
+total_amount: i128,
+released_amount: i128,
+start_time: u64,
+duration: u64
+}
+
+
+---
+
+## 🔐 Access Control & Security
+
+- **Time-Based Locking** — No early withdrawals  
+- **Immutable Ledger** — Data cannot be modified  
+- **Transparent Logic** — Fully verifiable on-chain  
+
+**Current Limitation:**  
+- Open access (demo version)
+
+**Future Improvements:**  
+- Role-Based Access Control (RBAC)  
+- Multi-user support  
+
+---
+
+## 🚧 Roadmap & Future Plans
+
+- Add cliff-based vesting  
+- Support multiple beneficiaries  
+- Token contract integration  
+- Frontend dashboard (React + Soroban)  
+- Admin controls  
+
+---
+
+## 📁 Project Structure
+
+
+.
+├── README.md
+└── contract
+├── Cargo.toml
+└── src
+└── lib.rs
+
+
+---
+
+## ⚙️ Environment Setup & Installation
+
+### A) Prerequisites
+
+Install Rust:
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+Install Soroban CLI:
+
+cargo install --locked soroban-cli
+
+Add WASM target:
+
+rustup target add wasm32-unknown-unknown
+B) Build Contract
+soroban contract build
+
+Optimize (optional but recommended):
+
+soroban contract optimize --wasm target/wasm32-unknown-unknown/release/contract.wasm
+C) Deployment & Invocation
+
+Deploy contract:
+
+soroban contract deploy \
+  --wasm target/wasm32-unknown-unknown/release/contract.wasm \
+  --source <YOUR_ACCOUNT> \
+  --network testnet
+
+Invoke contract:
+
+soroban contract invoke \
+  --id <CONTRACT_ID> \
+  --source <SOURCE_ACCOUNT> \
+  --network testnet \
+  -- release --current_time <TIME>
+👨‍💻 Author
+
 Ranit Sarkar
----
+Blockchain Enthusiast | Aspiring Developer
 
-## 📄 License
+📄 License
+
 MIT License
+
+
